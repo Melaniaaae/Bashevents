@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bash Events - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('hero-image.jpg') center/cover no-repeat;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 10px;
+    }
+    .ticket-section {
+      padding: 30px;
+      text-align: center;
+    }
+    .ticket-section button {
+      background-color: #e91e63;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Moving Ads Section */
+    .ads-wrapper {
+      overflow: hidden;
+      position: relative;
+      height: 200px;
+      margin: 20px 0;
+    }
+    .ads-section {
+      display: flex;
+      width: calc(300px * 6);
+      animation: slideAds 20s linear infinite;
+    }
+    .ads-section img {
+      width: 300px;
+      height: 180px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @keyframes slideAds {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Bash Events</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="bash events.html">Events</a>
+      <a href="#">Profile</a>
+      <a href="bash login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Experience the Best Events in Town!</h1>
+  </div>
+
+  <div class="ticket-section">
+    <h2>Upcoming Event: Bash Summer Fest 2025</h2>
+    <p>Join us for a weekend of music, food, and fun</p>
+    <button>Buy Tickets</button>
+  </div>
+
+  <!-- Moving Ads -->
+  <div class="ads-wrapper">
+    <div class="ads-section">
+      <img src="ad1.jpg" alt="Ad 1">
+      <img src="ad2.jpg" alt="Ad 2">
+      <img src="ad3.jpg" alt="Ad 3">
+      <!-- Duplicate images for seamless loop -->
+      <img src="ad1.jpg" alt="Ad 1">
+      <img src="ad2.jpg" alt="Ad 2">
+      <img src="ad3.jpg" alt="Ad 3">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Bash Events. All rights reserved.
+  </footer>
+
+</body>
+</html>

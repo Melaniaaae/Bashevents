@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bash Events - Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .events-wrapper {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #222;
+      border-left: 5px solid #2196f3;
+      padding-left: 10px;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    .event-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .event-title {
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px;
+      color: #333;
+    }
+
+    .event-buttons {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 15px 20px;
+    }
+
+    .event-buttons button {
+      background-color: #2196f3;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .bookmark-btn {
+      background-color: transparent;
+      color: #ff4081;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      transition: transform 0.2s;
+    }
+
+    .bookmark-btn:hover {
+      transform: scale(1.2);
+    }
+
+    .separator-line {
+      height: 2px;
+      background-color: #ccc;
+      margin: 50px 0 30px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .event-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .event-buttons button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Bash Events</strong></div>
+    <nav>
+      <a href="bash home.html">Home</a>
+      <a href="#">Events</a>
+      <a href="bash profile.html">Profile</a>
+      <a href="bash login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="events-wrapper">
+    <!-- Corporate Events Section -->
+    <h2 class="section-title">Corporate Events</h2>
+    <div class="event-grid">
+      <div class="event-card">
+        <img src="event1.jpg" alt="Corporate Event 1">
+        <div class="event-title">Tech Leaders Summit</div>
+        <div class="event-buttons">
+          <button class="bookmark-btn" title="Bookmark">&#128278;</button>
+          <button>View Details</button>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="event2.jpg" alt="Corporate Event 2">
+        <div class="event-title">Startup Connect 2025</div>
+        <div class="event-buttons">
+          <button class="bookmark-btn" title="Bookmark">&#128278;</button>
+          <button>View Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="separator-line"></div>
+
+    <!-- Festival Events Section -->
+    <h2 class="section-title">Festivals</h2>
+    <div class="event-grid">
+      <div class="event-card">
+        <img src="festival1.jpg" alt="Festival 1">
+        <div class="event-title">Nairobi Music Festival</div>
+        <div class="event-buttons">
+          <button class="bookmark-btn" title="Bookmark">&#128278;</button>
+          <button>View Details</button>
+        </div>
+      </div>
+     <div class="event-card">
+  <img src="chess.jpg" alt="Cultural Celebration 2025">
+  <div class="event-title">Cultural Celebration 2025</div>
+  <div class="event-buttons">
+    <button class="bookmark-btn" title="Bookmark">&#128278;</button>
+    <button>View Details</button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</body>
+</html>
