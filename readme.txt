@@ -1,0 +1,1 @@
+Changes made to the file >Adding the login and signup css stylesheets and writing the code for the bash login and bash signup.-6/30/2025
